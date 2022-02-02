@@ -98,7 +98,7 @@ export default function Tablero() {
           document.getElementById(box).className = turn;
           setTurn(turn === "X" ? "O" : "X");
         }
-        
+
       setTimeout(() => {
           if(result(box)){
             alert(`${turn} wins!`);
@@ -112,7 +112,7 @@ export default function Tablero() {
     <div className="container">
       <div>Turno de: {turn}</div>
       <div className="table">
-        {[1, 2, 3, 4, 5, 6, 7, 8, 9].map(function (box) {
+        {[1, 2, 3, 4, 5, 6, 7, 8, 9].map( (box) => {
           return (
             <div
               key={box}
