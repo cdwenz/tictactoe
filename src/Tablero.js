@@ -88,15 +88,17 @@ export default function Tablero() {
           return true;
         break;
     }
-    
+
     return false;
   };
 
   const onClicked = (box) => {
+
       if (document.getElementById(box).className === "box") {
           document.getElementById(box).className = turn;
           setTurn(turn === "X" ? "O" : "X");
         }
+        
       setTimeout(() => {
           if(result(box)){
             alert(`${turn} wins!`);
