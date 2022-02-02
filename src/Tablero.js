@@ -12,7 +12,9 @@ export default function Tablero() {
     setTurn("X");
   };
   const result = (winner) => {
+    
     const numBox = winner.slice(-1);
+
     const getBox = (value) => {
       return document.getElementById(`box${value}`).className;
     };
