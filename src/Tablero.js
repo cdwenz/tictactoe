@@ -87,7 +87,8 @@ export default function Tablero() {
         )
           return true;
         break;
-    }   
+    }
+    
     return false;
   };
 
