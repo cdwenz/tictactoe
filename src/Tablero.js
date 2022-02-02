@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import "./tablero.css";
 
 export default function Tablero() {
+  
   const [turn, setTurn] = useState("X");
 
   const reset = () => {
