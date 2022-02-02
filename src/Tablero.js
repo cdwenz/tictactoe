@@ -11,10 +11,10 @@ export default function Tablero() {
     }
     setTurn("X");
   };
+
   const result = (winner) => {
     
     const numBox = winner.slice(-1);
-
     const getBox = (value) => {
       return document.getElementById(`box${value}`).className;
     };
@@ -90,7 +90,6 @@ export default function Tablero() {
           return true;
         break;
     }
-
     return false;
   };
 
